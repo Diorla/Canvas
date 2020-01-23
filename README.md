@@ -30,3 +30,13 @@
   - The first point.
 - lineTo(x, y)
   - Where to draw to, starting from the last point indicated.
+
+## Arcs
+> Drawing arcs and of course, if you draw an arc long enough you form a circle
+
+- arc(x, y, radius, startAngle, endAngle, anticlockwise)
+  - x and y indicates the starting position.
+  - startAngle and endAngle indicates where to start and end along the 360 deg. If you start at zero and end at 360, that's a circle of course.
+  - anticlockwise decides the direction of drawing. It may the difference between a happy face and a sad face.
+- arcTo(x1, y1, x2, y2, radius)
+  - 
