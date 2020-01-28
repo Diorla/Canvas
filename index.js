@@ -3,14 +3,20 @@ const canvas = document.getElementById("canvas");
 // We will be using 2d, some newer browser support 3d/webgl
 const ctx = canvas.getContext("2d");
 
+// Tangential triangle
 ctx.beginPath();
-// Happy face
-ctx.arc(35, 75, 30, 0, Math.PI, false);
 
-ctx.fill();
+ctx.strokeStyle = "gray";
+ctx.moveTo(200, 20);
+ctx.lineTo(200, 130);
+ctx.lineTo(50, 20);
 
+ctx.stroke();
+
+// Arc
 ctx.beginPath();
-// Sad face
-ctx.arc(35, 65, 30, 0, Math.PI, true);
-ctx.closePath();
+ctx.strokeStyle = "red";
+ctx.lineWidth = 7;
+ctx.moveTo(200, 20);
+ctx.arcTo(200, 130, 50, 20, 40);
 ctx.stroke();

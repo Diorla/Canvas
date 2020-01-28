@@ -37,6 +37,10 @@
 - arc(x, y, radius, startAngle, endAngle, anticlockwise)
   - x and y indicates the starting position.
   - startAngle and endAngle indicates where to start and end along the 360 deg. If you start at zero and end at 360, that's a circle of course.
+  - Math.PI equals 180 degree.
   - anticlockwise decides the direction of drawing. It may the difference between a happy face and a sad face.
 - arcTo(x1, y1, x2, y2, radius)
-  - 
+  - x1 and y1 = starting points
+  - x2 and y2 = end points
+
+> `arc` is usually like a part of circle, while arcTo is more like a bent line, so you may find some straight line and curved centre.
