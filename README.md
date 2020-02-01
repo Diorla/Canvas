@@ -58,3 +58,8 @@
 > It has two control points, *cp1* and *cp2*, that is the difference
 - `bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y)`
 ![Bezier Curve](./bezier.png)
+
+## rect
+> It's the basis of `fillRect`, `strokeRect` and `clearRect`
+- `rect(x, y, width, height)`
+- It works with `fill()` and `stroke()` to achieve the desired rectangle.
