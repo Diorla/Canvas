@@ -43,4 +43,13 @@
   - x1 and y1 = starting points
   - x2 and y2 = end points
 
-> `arc` is usually like a part of circle, while arcTo is more like a bent line, so you may find some straight line and curved centre.
+> `arc` is usually like a part of circle, while `arcTo` is more like a bent line, so you may find some straight line and curved centre.
+
+## QuadraticCurveTo
+> Use to draw a quadratic curve
+- It has just one control point
+- `quadraticCurveTo(cp1x, cp1y, x, y)`
+- cp1 is the control points
+- x and y is the final position
+- The intial position is automatically determined based on the last location of the pen e.g `beginPath`, `moveTo` or `lineTo` etc.
+![Quadratic Curve](./quadraticcurve.gif)
