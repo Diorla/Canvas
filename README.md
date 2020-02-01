@@ -53,3 +53,8 @@
 - x and y is the final position
 - The intial position is automatically determined based on the last location of the pen e.g `beginPath`, `moveTo` or `lineTo` etc.
 ![Quadratic Curve](./quadraticcurve.gif)
+
+## BezierCurveTo
+> It has two control points, *cp1* and *cp2*, that is the difference
+- `bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y)`
+![Bezier Curve](./bezier.png)
