@@ -9,21 +9,23 @@
 - clearRect(x, y, width, height);
   - Makes the rectangular region transparent, like it's been erased.
 
-
 # Paths
+
 > When you call `fill()` or `stroke()`, it will affect all items drawn up to the last time you called `beginPath()` and override previous fill() or stroke() function. Hence, it's important to note that you're begining a new Path/drawing.
+
 - beginPath()
   - Indicates a new path is about to be created.
 - closePath()
- - Ends the current paths and draws a straight line to join to the beginPath
- - Except if your `closePath` ends on the same place as `beginPath`
- - So, it's basically used for tidying up, especially in `stroke()`. It's not required in `fill()`
+- Ends the current paths and draws a straight line to join to the beginPath
+- Except if your `closePath` ends on the same place as `beginPath`
+- So, it's basically used for tidying up, especially in `stroke()`. It's not required in `fill()`
 - stroke()
   - Draws outline
 - fill()
- - Draws solid shape.
+- Draws solid shape.
 
 ## Triangles
+
 > There is no function for this, but it can be achieved with the combination of `moveTo` and `lineTo`.
 
 - moveTo(x, y)
@@ -32,6 +34,7 @@
   - Where to draw to, starting from the last point indicated.
 
 ## Arcs
+
 > Drawing arcs and of course, if you draw an arc long enough you form a circle
 
 - arc(x, y, radius, startAngle, endAngle, anticlockwise)
@@ -46,20 +49,36 @@
 > `arc` is usually like a part of circle, while `arcTo` is more like a bent line, so you may find some straight line and curved centre.
 
 ## QuadraticCurveTo
+
 > Use to draw a quadratic curve
+
 - It has just one control point
 - `quadraticCurveTo(cp1x, cp1y, x, y)`
 - cp1 is the control points
 - x and y is the final position
 - The intial position is automatically determined based on the last location of the pen e.g `beginPath`, `moveTo` or `lineTo` etc.
-![Quadratic Curve](./quadraticcurve.gif)
+  ![Quadratic Curve](./quadraticcurve.gif)
 
 ## BezierCurveTo
-> It has two control points, *cp1* and *cp2*, that is the difference
+
+> It has two control points, _cp1_ and _cp2_, that is the difference
+
 - `bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y)`
-![Bezier Curve](./bezier.png)
+  ![Bezier Curve](./bezier.png)
 
 ## rect
+
 > It's the basis of `fillRect`, `strokeRect` and `clearRect`
+
 - `rect(x, y, width, height)`
 - It works with `fill()` and `stroke()` to achieve the desired rectangle.
+
+## Path2D
+
+> It allows to save an object to be created later. You can create the object and then draw it any time.
+
+```js
+new Path2D(); // empty path object
+new Path2D(path); // copy from another Path2D object
+new Path2D(d); // path from SVG path data
+```
