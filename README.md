@@ -82,3 +82,7 @@ new Path2D(); // empty path object
 new Path2D(path); // copy from another Path2D object
 new Path2D(d); // path from SVG path data
 ```
+
+### addPath
+> This allows to add a new path to an existing one. It may also transform it.
+`Path2D.addPath(path [, transform])`
