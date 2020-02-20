@@ -1,3 +1,7 @@
+# Introduction
+> This is based on tutorial from [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/)
+
+
 # Rectangles
 
 > x and y starts from the top left corner
